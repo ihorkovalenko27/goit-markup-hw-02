@@ -50,14 +50,13 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--black-text);
 }
 
 .link-nav .link:hover,
-.link-nav .link:focus,
-.link-nav .link:active {
+.link-nav .link:focus {
   color: var(--blue);
 }
 
@@ -71,7 +70,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
@@ -119,7 +118,7 @@ header {
 .advantages .adv-title {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text);
@@ -152,7 +151,7 @@ header {
 .team-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text);
