@@ -6,6 +6,7 @@
   --white: #ffffff;
   --dark-grey: #2f303a;
   --light-grey: #f5f4fa;
+  --blue: #2196f3;
 }
 
 body {
@@ -35,7 +36,7 @@ header {
 }
 
 .logo-web {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .logo-studio {
@@ -45,36 +46,40 @@ header {
 /* Ссылки навигации */
 
 .link-nav .link {
-  color: var(--black-text);
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+  color: var(--black-text);
 }
 
 .link-nav .link:hover,
 .link-nav .link:focus,
 .link-nav .link:active {
-  color: #2196f3;
+  color: var(--blue);
+}
+
+.link-nav .current {
+  color: var(--blue);
 }
 
 /* Ссылки контактов */
 
 .contacts-link .link {
-  color: #757575;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: #757575;
 }
 
 .contacts-link .link:hover,
 .contacts-link .link:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 /* Герой */
@@ -84,21 +89,20 @@ header {
 }
 
 .hero-title {
-  color: var(--white-text);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--white-text);
 }
 
 .hero-button {
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
 
 .button-text {
-  color: var(--white-text);
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -107,36 +111,37 @@ header {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  color: var(--white-text);
 }
 
 /* Преимущества */
 
 .advantages .adv-title {
-  color: var(--black-text);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--black-text);
 }
 
 .advantages .adv-text {
-  color: var(--grey-text);
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: var(--grey-text);
 }
 
 /* Чем мы занимаемся */
 
 .works-title {
-  color: var(--black-text);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--black-text);
 }
 
 /* Наша команда */
@@ -145,30 +150,30 @@ header {
 }
 
 .team-title {
-  color: var(--black-text);
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--black-text);
 }
 
 .team-list .list-item {
-  color: var(--black-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: var(--black-text);
 }
 
 /* На время убрал text-align!  */
 
 .prof-item {
-  color: var(--grey-text);
   font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: var(--grey-text);
 }
 
 /* Футер */
@@ -177,35 +182,100 @@ header {
 }
 
 .footer-studio {
-  color: var(--white-text);
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: var(--white-text);
 }
 
 .addr {
-  color: var(--white-text);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: var(--white-text);
 }
 
 .footer-link .link {
-  color: rgba(255, 255, 255, 0.6);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-link .link:hover,
 .footer-link .link:focus {
-  color: #2196f3;
+  color: var(--blue);
+}
+
+/* Страница портфолио */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Кнопки */
+
+.btn-variants .variants {
+  background-color: #f5f4fa;
+}
+
+.btn-variants .text-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+}
+
+.btn-variants .variants:hover,
+.btn-variants .variants:focus {
+  background-color: var(--blue);
+}
+
+/* Виды работ */
+
+.example {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--black-text);
+}
+
+.works-example .link {
+  text-decoration: none;
+}
+
+.works-example .example:hover,
+.works-example .example:focus {
+  color: var(--blue);
+}
+
+.works-example .kinds {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--grey-text);
 }
