@@ -73,7 +73,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #757575;
+  color: var(--grey-text);
 }
 
 .contacts-link .link:hover,
@@ -196,7 +196,6 @@ header {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-decoration: none;
   color: var(--white-text);
 }
 
