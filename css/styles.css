@@ -2,6 +2,7 @@
   --white-text: rgba(255, 255, 255, 1);
   --black-text: rgba(33, 33, 33, 1);
   --grey-text: rgba(117, 117, 117, 1);
+  --footer: rgba(255, 255, 255, 0.6);
 
   --white: #ffffff;
   --dark-grey: #2f303a;
@@ -47,7 +48,6 @@ header {
 
 .link-nav .link {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -67,7 +67,6 @@ header {
 /* Ссылки контактов */
 
 .contacts-link .link {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -88,7 +87,6 @@ header {
 }
 
 .hero-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -100,10 +98,6 @@ header {
 
 .hero-button {
   background-color: var(--blue);
-}
-
-.button-text {
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 2;
@@ -200,13 +194,12 @@ header {
 }
 
 .footer-link .link {
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer);
 }
 
 .footer-link .link:hover,
@@ -232,11 +225,7 @@ header {
 /* Кнопки */
 
 .btn-variants .variants {
-  background-color: #f5f4fa;
-}
-
-.btn-variants .text-btn {
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--light-grey);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -253,7 +242,6 @@ header {
 /* Виды работ */
 
 .example {
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -266,7 +254,6 @@ header {
   text-decoration: none;
 }
 
-.works-example .example:hover,
 .works-example .example:focus {
   color: var(--blue);
 }
